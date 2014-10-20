@@ -1,0 +1,49 @@
+ImdbLineParser
+	MultilineFileParser
+		RoleFileParser - true; uses the rate replace tuple capability
+			ActorsFileParser
+			ActressesFileParser
+			MiscellaneousFileParser
+			CinematographersFileParser
+			ComposersFileParser
+			CostumeDesignersFileParser
+			DirectorsFileParser
+			EditorsFileParser
+			ProducersFileParser
+			ProductionDesignersFileParser
+			WritersFileParser
+		CompanyRoleFileParser - true; uses the rate replace tuple capability
+			MiscellaneousCompaniesFileParser
+			ProductionCompaniesFileParser
+			SpecialEffetsCompaniesFileParser
+			DistributorsFileParser
+		BiographiesFileParser -true; TODO: incorporate gender; more doc-centric model; potentially build contributors plus docs as two separate types of tuples
+		AkaFileParser - true; uses the rate replace tuple capability
+			AkaNamesFileParser
+			AkaTitlesFileParser
+		GoofsFileParser - true; uses the rare replace tuple capability
+		MovieLinksFileParser
+		PlotFileParser 
+		 
+		AlternateVersionsFileParser - false; TODO: one of the # ones
+		CrazyCreditsFileParser - false; TODO: one of the # ones
+		
+		BusinessFileParser - false
+		LiteratureFileParser = false;
+		MpaaRatingsReasonsFileParser = false
+		QuotesFileParser = false
+		SoundtracksFileParser = false
+		TaglinesFileParser = false
+		TriviaFileParser = false
+	MultivalFileParser
+		CertificatesFileParser
+		ColorInfoFileParser
+		CountriesFileParser
+		GenresFileParser
+		KeywordsFileParser
+		LanguageFileParser
+		LocationsFileParser
+		SoundMixFileParser
+	MoviesFileParser
+	RatingsFileParser
+	RunningTimesFileParser
